@@ -21,7 +21,7 @@
             background-color: #ffffff;
             color: #24292e;
             border-radius: 6px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            
             border: 1px solid #e1e4e8;
         }
 
@@ -119,9 +119,21 @@
                 <button class="copy-button" onclick="copyToClipboard('ExecutorAPI.Attach();')">Copy</button>
             </div>
         </div>
+     <div class="step">
+            <h2>Step 3: Use the QuickScript Function</h2>
+            <p>Here’s how to use the QuickScript Function:</p>
+
+            <div class="code-block">
+                <code>bool success = PepsiAPI.ExecutorAPI.QuickScript("Luau", "print('Hello from Luau!')");
+</code>
+                <button class="copy-button" onclick="copyToClipboard('bool success = PepsiAPI.ExecutorAPI.QuickScript("Luau", "print('Hello from Luau!')");
+')">Copy</button>
+            </div>
+        </div>
+        
 
         <div class="step">
-            <h2>Step 3: Execution Function</h2>
+            <h2>Step 4: Execution Function</h2>
             <p>To execute a Lua script in Roblox, use the following command:</p>
 
             <div class="code-block">
