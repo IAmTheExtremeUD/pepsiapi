@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepsiAPI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #111;
+            color: #fff;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #fff;
+        }
+        .code-block {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .code-block code {
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+        }
+        .copy-button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .copy-button:hover {
+            background-color: #1e6a96;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .download-button:hover {
+            background-color: #1e6a96;
+        }
+        .step {
+            margin: 20px 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pepsi API</h1>
+        <p>Follow the steps below to use the <strong>PepsiAPI</strong> in your Visual Studio project.</p>
+
+        <div class="step">
+            <h2>Step 1: Download the Pepsi-API</h2>
+            <p>Click the button below to download the <strong>ExecutorAPI.dll</strong> file.</p>
+            <a href="https://example.com/download/ExecutorAPI.dll" class="download-button">Download ExecutorAPI.dll</a>
+        </div>
+
+        <div class="step">
+            <h2>Step 2: Use the Attach Function</h2>
+            <p>Here’s how to attach the API to the Roblox process:</p>
+
+            <div class="code-block">
+                <code>ExecutorAPI.Attach();</code>
+                <button class="copy-button" onclick="copyToClipboard('ExecutorAPI.Attach();')">Copy</button>
+            </div>
+        </div>
+
+        <div class="step">
+            <h2>Step 3: Execution Function</h2>
+            <p>To execute a Lua script in Roblox, use the following command:</p>
+
+            <div class="code-block">
+                <code>ExecutorAPI.Execute(textBox1.Text);</code>
+                <button class="copy-button" onclick="copyToClipboard('ExecutorAPI.Execute(textBox1.Text);')">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Copied to clipboard: " + text);
+        }
+    </script>
+</body>
+</html>
